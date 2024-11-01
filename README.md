@@ -2,6 +2,10 @@
 
 This NodeJS (Express) project will take the contents of a subscribed calendar (usually a URL that ends in `.ics`) using the built-in Fetch API, and (currently) transform all instances of `America/New_York` to `America/Edmonton`
 
+## Requirements
+
+* NodeJS v20
+
 ## Getting started
 
 1. Check out project and run `npm install`
