@@ -15,6 +15,10 @@ app.get('/', (req, res) => {
      		res.set(entry[0], entry[1])
      	}
         response = await response.text()
+        
+        // Replace all EST timezone identifiers with MST
+        response = response.replace(/America\/New_York/g, "America/Edmonton")
+        
         res.send(response)
      } else {
         console.error("Response received, but NOT OK")
